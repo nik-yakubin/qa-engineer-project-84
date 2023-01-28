@@ -121,12 +121,58 @@
   requirement: |
     Сайт должен быть способен обрабатывать большое количество трафика
   prerequisites:
-    Открыта страница логина
+    Открыт сайт для нагрузочного тестирования: https://loaddy.com/
   test-data: |
-    Логин = Логин = hexlet Пароль = badpass
+    Ссылка на интернет-магазин: https://hexlet-products-store.vercel.app/
   steps:
-    - Вводим логин
-    - Вводим пароль
-    - Нажимаем кнопку "Войти"
+    - Вставить ссылку https://hexlet-products-store.vercel.app/ в форму для проверки
+    - Нажать "Бесплатная проверка" и дождаться результата
+  expected-result: |
+    Результат проверки 10/10 (https://loaddy.com/result/538633995/)
+    
+- summary: |
+    Проверка доступности сайта на различных устройствах
+  requirement: |
+    Сайт должен быть доступен на различных устройствах
+  prerequisites:
+    Сайт интернет-магазина https://hexlet-products-store.vercel.app/ открыт в приложении Blisk
+  test-data: |
+    
+  steps:
+    - Вызываем режим разработчика нажатием Ctrl + M (Cmd + M для macOS)
+    - Нажимаем Device Set
+    - Выбираем Android
+    - Выбираем Google Pixel 6, Galaxy S21 Plus и LG G6
+    - Нажимаем кнопку Launch Devices
+  expected-result: |
+    Сайт загрузился, вёрстка адаптировалась к устройствам, ничего не съехало, текст и кнопки на месте
+    
+- summary: |
+    Проверка адаптивности вёрстки сайта
+  requirement: |
+    У сайта должна быть адаптивная вёрстка
+  prerequisites:
+    Открыт сайт: https://hexlet-products-store.vercel.app/ в браузере Google Chrome на Windows10
+  test-data: |
+    
+  steps:
+    - Нажать F12
+    - Вызвать команду Ctrl + Shift + M
+    - В поле "Dimensions" поочерёдно выбираем устройства
+  expected-result: |
+    Вёрстка адаптируется к устройствам, ничего не съезжает, текст и кнопки на месте
+    
+- summary: |
+    Проверка соответствия сайта SPA приложению
+  requirement: |
+    Сайт должен быть SPA приложением, которое не перезагружает страницу
+  prerequisites:
+    Открыт сайт: https://hexlet-products-store.vercel.app/
+  test-data: |
+    
+  steps:
+    - Нажать F12
+    - Выбрать вкладку Network
+    - 
   expected-result: |
     Пользователь должен попасть на главную страницу
