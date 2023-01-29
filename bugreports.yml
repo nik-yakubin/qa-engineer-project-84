@@ -48,7 +48,7 @@
   expected-result: |
     Все элементы сайта отобразились корректно, ничего не съехало
   actual-result: |
-    Элементы сайта заходят друг на друга. Скриншот доступен по адресу https://github.com/nik-yakubin/qa-engineer-project-84/blob/main/Website_mobile_version_bug.png
+    Элементы сайта заходят друг на друга. Скриншот доступен по адресу https://github.com/nik-yakubin/qa-engineer-project-84/blob/main/bug_screenshots/Website_mobile_version_bug.png
     
 - summary: |
     В браузере Firefox на мобильном устройстве сайт не работает должным образом
@@ -60,7 +60,7 @@
   expected-result: |
     Все элементы сайта отобразились корректно, ничего не съехало
   actual-result: |
-    Элементы сайта заходят друг на друга. Скриншот доступен по адресу https://github.com/nik-yakubin/qa-engineer-project-84/blob/main/Firefox_for_mobile_bug.png
+    Элементы сайта заходят друг на друга. Скриншот доступен по адресу https://github.com/nik-yakubin/qa-engineer-project-84/blob/main/bug_screenshots/Firefox_for_mobile_bug.png
     
 - summary: |
     На различных мобильных устройствах сайт не работает должным образом
@@ -77,7 +77,7 @@
   expected-result: |
     Сайт загрузился, вёрстка адаптировалась к устройствам, ничего не съехало, текст и кнопки на месте
   actual-result: |
-    Элементы сайта заходят друг на друга. Скриншот доступен по адресу https://github.com/nik-yakubin/qa-engineer-project-84/blob/main/Different_mobile_devices_bug.png
+    Элементы сайта заходят друг на друга. Скриншот доступен по адресу https://github.com/nik-yakubin/qa-engineer-project-84/blob/main/bug_screenshots/Different_mobile_devices_bug.png
     
 - summary: |
     Вёрстка сайта неадаптивная
@@ -126,7 +126,7 @@
   expected-result: |
     Появляется много различных файлов cookie
   actual-result: |
-    В cookie пусто. Скриншот доступен по адресу https://github.com/nik-yakubin/qa-engineer-project-84/blob/main/No_cart_in_browser_session_bug.png
+    В cookie пусто. Скриншот доступен по адресу https://github.com/nik-yakubin/qa-engineer-project-84/blob/main/bug_screenshots/No_cart_in_browser_session_bug.png
     
 - summary: |
     Цена товара не изменяется на рубли в русской версии сайта
