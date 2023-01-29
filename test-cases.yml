@@ -17,7 +17,7 @@
   requirement: |
     Пользователь должен иметь возможность искать товары по ключевому слову
   prerequisites:
-    Открыт сайт: https://hexlet-products-store.vercel.app/
+    Открыт сайт: https://hexlet-products-store.vercel.app/ на русском языке
   test-data: |
     
   steps:
