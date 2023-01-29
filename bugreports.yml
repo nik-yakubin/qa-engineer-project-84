@@ -78,3 +78,78 @@
     Сайт загрузился, вёрстка адаптировалась к устройствам, ничего не съехало, текст и кнопки на месте
   actual-result: |
     Элементы сайта заходят друг на друга. Скриншот доступен по адресу https://github.com/nik-yakubin/qa-engineer-project-84/blob/main/Different_mobile_devices_bug.png
+    
+- summary: |
+    Вёрстка сайта неадаптивная
+  environment: |
+    Google Chrome   109.0.5414.120 (Официальная сборка) (64 бит)
+    ОС Windows 10
+  steps-to-reproduce: |
+    1. Зайти на страницу онлайн-магазина https://hexlet-products-store.vercel.app/
+    2. Нажать F12
+    3. Вызвать команду Ctrl + Shift + M
+    4. В поле "Dimensions" поочерёдно выбирать устройства
+  expected-result: |
+    Вёрстка сайта адаптируется к разным устройствам
+  actual-result: |
+    Вёрстка сайта не адаптируется к разным устройствам, поля налезают друг на друга, картинки растянуты
+    
+- summary: |
+    После оформления заказа нельзя перейти на страницу оплаты
+  environment: |
+    Google Chrome   109.0.5414.120 (Официальная сборка) (64 бит)
+    ОС Windows 10
+  steps-to-reproduce: |
+    1. Зайти на страницу онлайн-магазина https://hexlet-products-store.vercel.app/
+    2. Сменить язык на русский
+    3. Выбрать любой товар и нажать кнопку "В корзину"
+    4. В правом верхнем углу сайта нажать кнопку "Корзина"
+    5. Нажать "Оформить заказ"
+  expected-result: |
+    Появляется страница оплаты заказа
+  actual-result: |
+    Всплывает окно об успешном оформлении заказа
+    
+- summary: |
+    Корзина не хранится в сессии браузера
+  environment: |
+    Google Chrome   109.0.5414.120 (Официальная сборка) (64 бит)
+    ОС Windows 10
+  steps-to-reproduce: |
+    1. Зайти на страницу онлайн-магазина https://hexlet-products-store.vercel.app/
+    2. Сменить язык на русский
+    3. Выбрать любой товар и нажать кнопку "В корзину"
+    4. Нажать F12
+    5. Выбрать вкладку Appplication
+    6. Двойным кликом выбрать "Cookies"
+    7. Один раз кликнуть на появившуюся строку во вкладке "Cookies"
+  expected-result: |
+    Появляется много различных файлов cookie
+  actual-result: |
+    В cookie пусто. Скриншот доступен по адресу https://github.com/nik-yakubin/qa-engineer-project-84/blob/main/No_cart_in_browser_session_bug.png
+    
+- summary: |
+    Цена товара не изменяется на рубли в русской версии сайта
+  environment: |
+    Google Chrome   109.0.5414.120 (Официальная сборка) (64 бит)
+    ОС Windows 10
+  steps-to-reproduce: |
+    1. Зайти на страницу онлайн-магазина https://hexlet-products-store.vercel.app/
+    2. Сменить язык на русский
+  expected-result: |
+    Цена товаров указана в рублях
+  actual-result: |
+    Цена товаров указана в долларах
+    
+- summary: |
+    Знак доллара неверно расположен
+  environment: |
+    Google Chrome   109.0.5414.120 (Официальная сборка) (64 бит)
+    ОС Windows 10
+  steps-to-reproduce: |
+    1. Зайти на страницу онлайн-магазина https://hexlet-products-store.vercel.app/
+    2. Сменить язык на английский
+  expected-result: |
+    Знак доллара стоит перед ценой
+  actual-result: |
+    Знак доллара стоит после цены
