@@ -1,0 +1,80 @@
+---
+- summary: |
+    Не работает поиск по ключевому слову
+  environment: |
+    Google Chrome   109.0.5414.120 (Официальная сборка) (64 бит)
+    ОС Windows 10
+  steps-to-reproduce: |
+    1. Зайти на страницу онлайн-магазина https://hexlet-products-store.vercel.app/
+    2. В форму поиска "search" ввести ключевое слово "table"
+  expected-result: |
+    На странице появляются товары с ключевым словом "table"
+  actual-result: |
+    На странице сообщение о том, что ничего не найдено
+
+- summary: |
+    Отсутствует фильтр товаров по цвету
+  environment: |
+    Google Chrome   109.0.5414.120 (Официальная сборка) (64 бит)
+    ОС Windows 10
+  steps-to-reproduce: |
+    1. Зайти на страницу онлайн-магазина https://hexlet-products-store.vercel.app/
+    2. Скроллить вниз, пока не закончатся фильтры поиска
+  expected-result: |
+    На странице есть фильтр по цвету
+  actual-result: |
+    На странице нет фильтра по цвету
+    
+- summary: |
+    Шапка сайта пропадает при скролле вниз
+  environment: |
+    Google Chrome   109.0.5414.120 (Официальная сборка) (64 бит)
+    ОС Windows 10
+  steps-to-reproduce: |
+    1. Зайти на страницу онлайн-магазина https://hexlet-products-store.vercel.app/
+    2. Скроллить страницу вниз
+  expected-result: |
+    Шапка сайта всегда видна
+  actual-result: |
+    Шапка сайта пропадает при скролле вниз
+    
+- summary: |
+    На мобильном устройстве сайт не работает должным образом 
+  environment: |
+    iPhone 8 Plus, iOS 16.1.1, Safari
+  steps-to-reproduce: |
+    1. Открыть страницу онлайн-магазина https://hexlet-products-store.vercel.app/
+    2. Листать страницу вниз
+  expected-result: |
+    Все элементы сайта отобразились корректно, ничего не съехало
+  actual-result: |
+    Элементы сайта заходят друг на друга. Скриншот доступен по адресу https://github.com/nik-yakubin/qa-engineer-project-84/blob/main/Website_mobile_version_bug.png
+    
+- summary: |
+    В браузере Firefox на мобильном устройстве сайт не работает должным образом
+  environment: |
+    iPhone 8 Plus, iOS 16.1.1, Firefox 109.0 (25841)
+  steps-to-reproduce: |
+    1. Зайти на страницу онлайн-магазина https://hexlet-products-store.vercel.app/
+    2. Листать страницу вниз
+  expected-result: |
+    Все элементы сайта отобразились корректно, ничего не съехало
+  actual-result: |
+    Элементы сайта заходят друг на друга. Скриншот доступен по адресу https://github.com/nik-yakubin/qa-engineer-project-84/blob/main/Firefox_for_mobile_bug.png
+    
+- summary: |
+    На различных мобильных устройствах сайт не работает должным образом
+  environment: |
+    Google Chrome   109.0.5414.120 (Официальная сборка) (64 бит)
+    ОС Windows 10
+  steps-to-reproduce: |
+    1. Зайти на страницу онлайн-магазина https://hexlet-products-store.vercel.app/ в приложении Blisk
+    2. Вызвать режим разработчика нажатием Ctrl + M (Cmd + M для macOS)
+    3. Нажать Device Set
+    4. Выбрать Android
+    5. Выбрать Google Pixel 6, Galaxy S21 Plus и LG G6
+    6. Нажать кнопку Launch Devices
+  expected-result: |
+    Сайт загрузился, вёрстка адаптировалась к устройствам, ничего не съехало, текст и кнопки на месте
+  actual-result: |
+    Элементы сайта заходят друг на друга. Скриншот доступен по адресу https://github.com/nik-yakubin/qa-engineer-project-84/blob/main/Different_mobile_devices_bug.png
