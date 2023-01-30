@@ -121,7 +121,7 @@
   requirement: |
     Сайт должен быть способен обрабатывать большое количество трафика
   prerequisites:
-    Открыт сайт для нагрузочного тестирования: https://loaddy.com/
+    Открыт сайт для нагрузочного тестирования https://loaddy.com/
   test-data: |
     Ссылка на интернет-магазин: https://hexlet-products-store.vercel.app/
   steps:
