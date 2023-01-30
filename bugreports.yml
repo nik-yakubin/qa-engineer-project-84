@@ -70,24 +70,6 @@
     Всплывает окно об успешном оформлении заказа
     
 - summary: |
-    Корзина не хранится в сессии браузера
-  environment: |
-    Google Chrome   109.0.5414.120 (Официальная сборка) (64 бит)
-    ОС Windows 10
-  steps-to-reproduce: |
-    1. Зайти на страницу онлайн-магазина https://hexlet-products-store.vercel.app/
-    2. Сменить язык на русский
-    3. Выбрать любой товар и нажать кнопку "В корзину"
-    4. Нажать F12
-    5. Выбрать вкладку Appplication
-    6. Двойным кликом выбрать "Cookies"
-    7. Один раз кликнуть на появившуюся строку во вкладке "Cookies"
-  expected-result: |
-    Появляется много различных файлов cookie
-  actual-result: |
-    В cookie пусто. Скриншот доступен по адресу https://github.com/nik-yakubin/qa-engineer-project-84/blob/main/bug_screenshots/No_cart_in_browser_session_bug.png
-    
-- summary: |
     Цена товара не изменяется на рубли в русской версии сайта
   environment: |
     Google Chrome   109.0.5414.120 (Официальная сборка) (64 бит)
