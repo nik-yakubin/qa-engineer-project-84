@@ -167,7 +167,7 @@
   requirement: |
     Сайт должен быть SPA приложением, которое не перезагружает страницу
   prerequisites:
-    Открыт сайт: https://hexlet-products-store.vercel.app/
+    Открыт сайт https://hexlet-products-store.vercel.app/
   test-data: |
     
   steps:
