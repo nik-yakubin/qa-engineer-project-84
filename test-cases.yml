@@ -43,7 +43,7 @@
   requirement: |
     Пользователь должен иметь возможность просматривать товары и просматривать подробную информацию о товаре
   prerequisites:
-    Открыт сайт: https://hexlet-products-store.vercel.app/
+    Открыт сайт https://hexlet-products-store.vercel.app/
   test-data: |
     
   steps:
