@@ -4,7 +4,7 @@
   requirement: |
     Пользователь должен иметь возможность искать товары по ключевому слову
   prerequisites: |
-    Открыт сайт: https://hexlet-products-store.vercel.app/, язык сайта английский
+    Открыт сайт https://hexlet-products-store.vercel.app/, язык сайта английский
   test-data: |
     Ключевое слово = table
   steps:
@@ -17,9 +17,9 @@
   requirement: |
     Пользователь должен иметь возможность искать товары по категории
   prerequisites:
-    Открыт сайт: https://hexlet-products-store.vercel.app/ на русском языке
+    Открыт сайт https://hexlet-products-store.vercel.app/ на русском языке
   test-data: |
-    
+     
   steps:
     - В фильтре "Категория" выбираем "smartphones"
   expected-result: |
@@ -30,9 +30,9 @@
   requirement: |
     Пользователь должен иметь возможность фильтровать товары по цвету
   prerequisites:
-    Открыт сайт: https://hexlet-products-store.vercel.app/, язык сайта русский
+    Открыт сайт https://hexlet-products-store.vercel.app/, язык сайта русский
   test-data: |
-    
+     
   steps:
     - В фильтре "Цвет" выбираем "Чёрный"
   expected-result: |
@@ -45,7 +45,7 @@
   prerequisites:
     Открыт сайт https://hexlet-products-store.vercel.app/
   test-data: |
-    
+     
   steps:
     - Кликаем на описание любого товара
   expected-result: |
@@ -56,9 +56,9 @@
   requirement: |
     пользователь должен иметь возможность добавлять товары в корзину и просматривать содержимое корзины
   prerequisites:
-    Открыт сайт: https://hexlet-products-store.vercel.app/, язык сайта английский
+    Открыт сайт https://hexlet-products-store.vercel.app/, язык сайта английский
   test-data: |
-    
+     
   steps:
     - Нажимаем "Add to cart" на любой карточке товара
   expected-result: |
@@ -69,9 +69,9 @@
   requirement: |
     Веб-сайт должен быть разработан с учетом удобства использования и оптимизирован для скорости работы
   prerequisites:
-    Открыт сайт: https://hexlet-products-store.vercel.app/
+    Открыт сайт https://hexlet-products-store.vercel.app/
   test-data: |
-    
+     
   steps:
     - Скроллим страницу вниз
   expected-result: |
@@ -82,9 +82,9 @@
   requirement: |
     сайт должен быть безопасным и защищать данные пользователя
   prerequisites:
-    Открыт сайт: https://hexlet-products-store.vercel.app/
+    Открыт сайт https://hexlet-products-store.vercel.app/
   test-data: |
-    
+     
   steps:
     - Нажимаем на знак "замок" рядом с URL сайта
   expected-result: |
@@ -95,11 +95,11 @@
   requirement: |
     Сайт должен иметь мобильную версию
   prerequisites:
-    Открыт сайт: https://hexlet-products-store.vercel.app/ на мобильном устройстве
+    Открыт сайт https://hexlet-products-store.vercel.app/ на мобильном устройстве
   test-data: |
-    
+     
   steps:
-  
+   
   expected-result: |
     Сайт открылся
     
@@ -108,11 +108,11 @@
   requirement: |
     Сайт должен быть протестирован на совместимость с последними версиями браузеров
   prerequisites:
-    Открыт сайт: https://hexlet-products-store.vercel.app/ на мобильном устройстве в браузере Firefox последней версии (109.0 (25841))
+    Открыт сайт https://hexlet-products-store.vercel.app/ на мобильном устройстве в браузере Firefox последней версии (109.0 (25841))
   test-data: |
-    
+     
   steps:
-    
+     
   expected-result: |
     Сайт открылся
     
@@ -123,7 +123,7 @@
   prerequisites:
     Открыт сайт для нагрузочного тестирования https://loaddy.com/
   test-data: |
-    Ссылка на интернет-магазин: https://hexlet-products-store.vercel.app/
+    Ссылка на интернет-магазин https://hexlet-products-store.vercel.app/
   steps:
     - Вставить ссылку https://hexlet-products-store.vercel.app/ в форму для проверки
     - Нажать "Бесплатная проверка" и дождаться результата
@@ -137,7 +137,7 @@
   prerequisites:
     Сайт интернет-магазина https://hexlet-products-store.vercel.app/ открыт в приложении Blisk
   test-data: |
-    
+     
   steps:
     - Вызываем режим разработчика нажатием Ctrl + M (Cmd + M для macOS)
     - Нажимаем Device Set
@@ -152,9 +152,9 @@
   requirement: |
     У сайта должна быть адаптивная вёрстка
   prerequisites:
-    Открыт сайт: https://hexlet-products-store.vercel.app/ в браузере Google Chrome на Windows10
+    Открыт сайт https://hexlet-products-store.vercel.app/ в браузере Google Chrome на Windows10
   test-data: |
-    
+     
   steps:
     - Нажать F12
     - Вызвать команду Ctrl + Shift + M
@@ -169,7 +169,7 @@
   prerequisites:
     Открыт сайт https://hexlet-products-store.vercel.app/
   test-data: |
-    
+     
   steps:
     - Нажать F12
     - Выбрать вкладку Network
@@ -186,9 +186,9 @@
   requirement: |
     У товаров должен быть постраничный вывод
   prerequisites:
-    Открыт сайт: https://hexlet-products-store.vercel.app/ на английском языке
+    Открыт сайт https://hexlet-products-store.vercel.app/ на английском языке
   test-data: |
-    
+     
   steps:
     - Нажимаем кнопку "Next"
     - Ещё раз нажимаем кнопку "Next"
@@ -202,7 +202,7 @@
   prerequisites:
     Открыт сайт https://hexlet-products-store.vercel.app/ на русском языке
   test-data: |
-    
+     
   steps:
     - Выбираем любой товар и нажимаем кнопку "В корзину"
     - В правом верхнем углу сайта нажимаем кнопку "Корзина"
@@ -217,7 +217,7 @@
   prerequisites:
     Открыт сайт https://hexlet-products-store.vercel.app/ на русском языке в браузере Google Chrome
   test-data: |
-    
+     
   steps:
     - Выбираем любой товар и нажимаем кнопку "В корзину"
     - Нажимаем F12
@@ -232,9 +232,9 @@
   requirement: |
     Цена товара меняется на рубли при изменении языка сайта на русский
   prerequisites:
-    
+     
   test-data: |
-    
+     
   steps:
     - Открываем сайт по ссылке https://hexlet-products-store.vercel.app/
     - Меняем язык сайта на русский
@@ -246,9 +246,9 @@
   requirement: |
     Знак доллара стоит перед числовым значением цены, если выбран английский язык сайта
   prerequisites:
-    
+     
   test-data: |
-    
+     
   steps:
     - Открыть сайт по ссылке https://hexlet-products-store.vercel.app/
     - Проверить, что сайт открылся на английском языке
