@@ -3,51 +3,204 @@ test-cases:
   - summary: |
       Пользователь может искать товары по ключевому слову
     status: fail
-
   - summary: |
       Пользователь может искать товары по категории
     status: pass
-    
   - summary: |
       Пользователь может фильтровать товары по цвету
     status: fail
-    
   - summary: |
       Пользователь может просматривать подробную информацию о товаре
     status: fail
-    
   - summary: |
       Пользователь может добавлять товары в корзину
     status: pass
-    
   - summary: |
       Шапка сайта всегда видна
     status: fail
-    
   - summary: |
       Проверка защищённого соединения с сайтом
     status: pass
-    
   - summary: |
       Проверка сайта на мобильном устройстве
-    status: pass 
-    
+    status: pass
+  - summary: >
+      Проверка работы сайта в мобильном браузере Firefox последней версии
+      (109.0 (25841))
+    status: pass
   - summary: |
-      Проверка работы сайта в мобильном браузере Firefox последней версии (109.0 (25841))
+      Проверка работоспособности сайта при большом количестве трафика
     status: fail
-    
   - summary: |
       Проверка доступности сайта на различных устройствах
     status: pass
-
+  - summary: |
+      Проверка адаптивности вёрстки сайта
+    status: pass
+  - summary: |
+      Проверка соответствия сайта SPA приложению
+    status: fail
+  - summary: |
+      Проверка постраничного вывода товаров на сайте
+    status: pass
+  - summary: |
+      Проверка оформления заказа с переходом на страницу оплаты
+    status: fail
+  - summary: |
+      Проверка хранения корзины в сессии браузера
+    status: pass
+  - summary: |
+      Проверка изменения валюты при смене языка
+    status: fail
+  - summary: |
+      Проверка положения знака доллара
+    status: fail
+    
 bugreports:
   - summary: |
-      Короткое описание ошибки
+      Не работает поиск по ключевому слову
     environment: |
-      Ссылка на билд/коммит/версия ПО и всего окружения
-    steps-to-reproduce: |
-      Полный перечень шагов для воспроизведения, на каком шаге произошла ошибка
+      Google Chrome   109.0.5414.120 (Официальная сборка) (64 бит)
+      ОС Windows 10
+    steps-to-reproduce: >
+      1. Зайти на страницу онлайн-магазина
+      https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+
+      2. В форму поиска "search" ввести ключевое слово "table"
     expected-result: |
-      Какой результат должен был быть без ошибки
+      На странице появляются товары с ключевым словом "table"
     actual-result: |
-      Какой результат получился на самом деле
+      На странице пропадает кнопка следующей страницы
+  - summary: |
+      Отсутствует фильтр товаров по цвету
+    environment: |
+      Google Chrome   109.0.5414.120 (Официальная сборка) (64 бит)
+      ОС Windows 10
+    steps-to-reproduce: >
+      1. Зайти на страницу онлайн-магазина
+      https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+
+      2. Скроллить вниз, пока не закончатся фильтры поиска
+    expected-result: |
+      На странице есть фильтр по цвету
+    actual-result: |
+      На странице нет фильтра по цвету
+  - summary: |
+      Нельзя просмотреть подробную информацию о товаре
+    environment: |
+      Google Chrome   109.0.5414.120 (Официальная сборка) (64 бит)
+      ОС Windows 10
+    steps-to-reproduce: >
+      1. Зайти на страницу онлайн-магазина
+      https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+
+      2. Нажать на описание любого товара
+    expected-result: |
+      Переход на страницу с подробным описанием товара
+    actual-result: |
+      Ничего не происходит
+  - summary: |
+      Шапка сайта пропадает при скролле вниз
+    environment: |
+      Google Chrome   109.0.5414.120 (Официальная сборка) (64 бит)
+      ОС Windows 10
+    steps-to-reproduce: >
+      1. Зайти на страницу онлайн-магазина
+      https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+
+      2. Скроллить страницу вниз
+    expected-result: |
+      Шапка сайта всегда видна
+    actual-result: |
+      Шапка сайта пропадает при скролле вниз
+  - summary: |
+      Проверка работоспособности сайта при большом количестве трафика
+    environment: |
+      Google Chrome   109.0.5414.120 (Официальная сборка) (64 бит)
+      ОС Windows 10
+    steps-to-reproduce: >
+      1. Открыть сайт для нагрузочного тестирования
+      https://loaddy.com/
+
+      2. Вставить ссылку https://products-store-git-v2bugfixes-hexlet-components.vercel.app/ в форму для проверки
+
+      3. Нажать "Бесплатная проверка" и дождаться результата
+    expected-result: |
+      Результат проверки 10/10
+    actual-result: |
+      Результат проверки 4/10 (https://loaddy.com/result/819897383/)
+  - summary: |
+      Проверка соответствия сайта SPA приложению
+    environment: |
+      Google Chrome   109.0.5414.120 (Официальная сборка) (64 бит)
+      ОС Windows 10
+    steps-to-reproduce: >
+      1. Открыть сайт магазина
+      https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+
+      2. Нажать F12
+
+      3. Выбрать вкладку Network
+
+      4. Среди фильтров выбрать Fetch/XHR
+
+      5. Нажать "Cart"
+
+      6. Нажать "Store"
+
+      7. Снова нажать "Cart"
+
+      8. Снова нажать "Store"
+    expected-result: >
+      При каждом нажатии страница не перезагружается полностью, а
+      лишь догружает новую информацию
+    actual-result: |
+      При нажатии на кнопку "Store" страница полностью перезагружается
+  - summary: |
+      Проверка оформления заказа с переходом на страницу оплаты
+    environment: |
+      Google Chrome   109.0.5414.120 (Официальная сборка) (64 бит)
+      ОС Windows 10
+    steps-to-reproduce: >
+      1. Открыть сайт магазина
+      https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+
+      2. Сменить язык на русский
+
+      3. Выбрать любой товар и нажать кнопку "В корзину" 
+
+      4. В правом верхнем углу сайта нажать кнопку "Корзина"
+
+      5. Нажать "Оформить заказ"
+    expected-result: |
+      Появляется страница оплаты заказа
+    actual-result: |
+      Всплывает окно об успешном оформлении заказа
+  - summary: |
+      Проверка изменения валюты при смене языка
+    environment: |
+      Google Chrome   109.0.5414.120 (Официальная сборка) (64 бит)
+      ОС Windows 10
+    steps-to-reproduce: >
+      1. Открыть сайт магазина
+      https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+
+      2. Сменить язык на русский
+    expected-result: |
+      Цена товаров меняется с долларов на рубли
+    actual-result: |
+      Цена товаров осталась в долларах
+  - summary: |
+      Проверка положения знака доллара
+    environment: |
+      Google Chrome   109.0.5414.120 (Официальная сборка) (64 бит)
+      ОС Windows 10
+    steps-to-reproduce: >
+      1. Открыть сайт магазина
+      https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+
+      2. Проверить, что сайт открылся на английском языке
+    expected-result: |
+      Знак доллара стоит перед числовым значением цены
+    actual-result: |
+      Знак доллара стоит после числового значения цены 
