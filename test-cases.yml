@@ -200,7 +200,7 @@
   requirement: |
     Пользователь может оформить заказ с переходом на страницу оплаты
   prerequisites:
-    Открыт сайт: https://hexlet-products-store.vercel.app/ на русском языке
+    Открыт сайт https://hexlet-products-store.vercel.app/ на русском языке
   test-data: |
     
   steps:
@@ -215,7 +215,7 @@
   requirement: |
     Корзина должна храниться в сессии браузера
   prerequisites:
-    Открыт сайт: https://hexlet-products-store.vercel.app/ на русском языке в браузере Google Chrome
+    Открыт сайт https://hexlet-products-store.vercel.app/ на русском языке в браузере Google Chrome
   test-data: |
     
   steps:
@@ -236,7 +236,7 @@
   test-data: |
     
   steps:
-    - Открываем сайт по ссылке: https://hexlet-products-store.vercel.app/
+    - Открываем сайт по ссылке https://hexlet-products-store.vercel.app/
     - Меняем язык сайта на русский
   expected-result: |
     Цена товаров меняется с долларов на рубли
@@ -250,7 +250,7 @@
   test-data: |
     
   steps:
-    - Открыть сайт по ссылке: https://hexlet-products-store.vercel.app/
+    - Открыть сайт по ссылке https://hexlet-products-store.vercel.app/
     - Проверить, что сайт открылся на английском языке
   expected-result: |
     Знак доллара стоит перед числовым значением цены
