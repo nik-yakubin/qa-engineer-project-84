@@ -55,6 +55,9 @@ test-cases:
   - summary: |
       Проверка положения знака доллара
     status: fail
+  - summary: |
+      Пользователь может фильтровать товары по цене
+    status: fail
     
 bugreports:
   - summary: |
