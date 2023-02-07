@@ -72,20 +72,6 @@ bugreports:
     actual-result: |
       Ничего не происходит
   - summary: |
-      Шапка сайта пропадает при скролле вниз
-    environment: |
-      Google Chrome   109.0.5414.120 (Официальная сборка) (64 бит)
-      ОС Windows 10
-    steps-to-reproduce: >
-      1. Зайти на страницу онлайн-магазина
-      https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-
-      2. Скроллить страницу вниз
-    expected-result: |
-      Шапка сайта всегда видна
-    actual-result: |
-      Шапка сайта пропадает при скролле вниз
-  - summary: |
       Проверка работоспособности сайта при большом количестве трафика
     environment: |
       Google Chrome   109.0.5414.120 (Официальная сборка) (64 бит)
@@ -128,51 +114,3 @@ bugreports:
       лишь догружает новую информацию
     actual-result: |
       При нажатии на кнопку "Store" страница полностью перезагружается
-  - summary: |
-      Проверка оформления заказа с переходом на страницу оплаты
-    environment: |
-      Google Chrome   109.0.5414.120 (Официальная сборка) (64 бит)
-      ОС Windows 10
-    steps-to-reproduce: >
-      1. Открыть сайт магазина
-      https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-
-      2. Сменить язык на русский
-
-      3. Выбрать любой товар и нажать кнопку "В корзину" 
-
-      4. В правом верхнем углу сайта нажать кнопку "Корзина"
-
-      5. Нажать "Оформить заказ"
-    expected-result: |
-      Появляется страница оплаты заказа
-    actual-result: |
-      Всплывает окно об успешном оформлении заказа
-  - summary: |
-      Проверка изменения валюты при смене языка
-    environment: |
-      Google Chrome   109.0.5414.120 (Официальная сборка) (64 бит)
-      ОС Windows 10
-    steps-to-reproduce: >
-      1. Открыть сайт магазина
-      https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-
-      2. Сменить язык на русский
-    expected-result: |
-      Цена товаров меняется с долларов на рубли
-    actual-result: |
-      Цена товаров осталась в долларах
-  - summary: |
-      Проверка положения знака доллара
-    environment: |
-      Google Chrome   109.0.5414.120 (Официальная сборка) (64 бит)
-      ОС Windows 10
-    steps-to-reproduce: >
-      1. Открыть сайт магазина
-      https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-
-      2. Проверить, что сайт открылся на английском языке
-    expected-result: |
-      Знак доллара стоит перед числовым значением цены
-    actual-result: |
-      Знак доллара стоит после числового значения цены 
