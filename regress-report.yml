@@ -58,34 +58,6 @@ test-cases:
     
 bugreports:
   - summary: |
-      Не работает поиск по ключевому слову
-    environment: |
-      Google Chrome   109.0.5414.120 (Официальная сборка) (64 бит)
-      ОС Windows 10
-    steps-to-reproduce: >
-      1. Зайти на страницу онлайн-магазина
-      https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-
-      2. В форму поиска "search" ввести ключевое слово "table"
-    expected-result: |
-      На странице появляются товары с ключевым словом "table"
-    actual-result: |
-      На странице пропадает кнопка следующей страницы
-  - summary: |
-      Отсутствует фильтр товаров по цвету
-    environment: |
-      Google Chrome   109.0.5414.120 (Официальная сборка) (64 бит)
-      ОС Windows 10
-    steps-to-reproduce: >
-      1. Зайти на страницу онлайн-магазина
-      https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-
-      2. Скроллить вниз, пока не закончатся фильтры поиска
-    expected-result: |
-      На странице есть фильтр по цвету
-    actual-result: |
-      На странице нет фильтра по цвету
-  - summary: |
       Нельзя просмотреть подробную информацию о товаре
     environment: |
       Google Chrome   109.0.5414.120 (Официальная сборка) (64 бит)
